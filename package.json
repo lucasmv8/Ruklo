@@ -4,7 +4,6 @@
   "description": "Prueba tecnica para ruklo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "tsx prisma/seed.ts",
     "convert-json": "node src/utils/convert-json-to-ts.js",
     "db:generate": "prisma generate",

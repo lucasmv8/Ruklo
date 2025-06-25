@@ -345,5 +345,4 @@ npm run db:reset       # Resetear base de datos
 ### Comandos de Desarrollo:
 ```bash
 npm run convert-json   # Convertir JSON a TypeScript
-npm test              # Ejecutar pruebas
 ```
