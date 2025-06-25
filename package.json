@@ -1,0 +1,38 @@
+{
+  "name": "ruklo",
+  "version": "1.0.0",
+  "description": "Prueba tecnica para ruklo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "tsx prisma/seed.ts",
+    "convert-json": "node src/utils/convert-json-to-ts.js",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "db:reset": "prisma migrate reset --force",
+    "start": "tsx bin/interactivo.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasmv8/Ruklo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lucasmv8/Ruklo/issues"
+  },
+  "homepage": "https://github.com/lucasmv8/Ruklo#readme",
+  "dependencies": {
+    "@prisma/client": "^6.10.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.4",
+    "prisma": "^6.10.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}

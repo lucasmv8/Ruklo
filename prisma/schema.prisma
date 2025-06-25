@@ -1,0 +1,73 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         String      @id
+  events     Event[]
+  beneficios Beneficio[]
+
+  @@map("Usuario")
+}
+
+model Store {
+  id         String      @id
+  events     Event[]
+  beneficios Beneficio[]
+}
+
+model Event {
+  id               Int               @id @default(autoincrement())
+  type             EventType
+  timestamp        DateTime
+  amount           Float?
+  usuario          User              @relation(fields: [usuarioId], references: [id])
+  usuarioId        String
+  store            Store             @relation(fields: [storeId], references: [id])
+  storeId          String
+  beneficioEventos BeneficioEvento[]
+}
+
+model Beneficio {
+  id                  Int               @id @default(autoincrement())
+  usuario             User              @relation(fields: [usuarioId], references: [id])
+  usuarioId           String
+  store               Store             @relation(fields: [storeId], references: [id])
+  storeId             String
+  visitasConsecutivas Int
+  fechaCreacion       DateTime          @default(now())
+  fechaOtorgado       DateTime?
+  estado              EstadoBeneficio   @default(PENDIENTE)
+  eventos             BeneficioEvento[]
+
+  @@unique([usuarioId, storeId, fechaCreacion])
+}
+
+model BeneficioEvento {
+  id          Int       @id @default(autoincrement())
+  beneficio   Beneficio @relation(fields: [beneficioId], references: [id], onDelete: Cascade)
+  beneficioId Int
+  evento      Event     @relation(fields: [eventoId], references: [id])
+  eventoId    Int
+  orden       Int
+
+  @@unique([beneficioId, eventoId])
+}
+
+enum EventType {
+  visit
+  recharge
+}
+
+enum EstadoBeneficio {
+  PENDIENTE
+  OTORGADO
+  USADO
+  EXPIRADO
+}

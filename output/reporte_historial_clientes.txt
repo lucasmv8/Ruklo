@@ -1,0 +1,659 @@
+================================================================================
+REPORTE 2: HISTORIAL DE TRANSACCIONES POR CLIENTE
+================================================================================
+
+CRITERIO: Historial agrupado por tipo (visit/recharge) con promedio de monto recargado por semana
+
+CLIENTE ID: client_0
+--------------------------------------------------
+Total de eventos: 105
+Total de visitas: 47
+Total de recargas: 58
+Monto total recargado: $172917.00
+Promedio semanal de recargas: $14409.75
+
+DETALLE POR SEMANAS:
+  Semana 1 (2025-04-21):
+    Visitas: 1
+    Recargas: 4
+    Monto total: $13163.00
+
+  Semana 2 (2025-04-22):
+    Visitas: 1
+    Recargas: 1
+    Monto total: $3880.00
+
+  Semana 3 (2025-04-28):
+    Visitas: 8
+    Recargas: 10
+    Monto total: $29943.00
+
+  Semana 4 (2025-04-29):
+    Visitas: 3
+    Recargas: 0
+    Monto total: $0.00
+
+  Semana 5 (2025-05-05):
+    Visitas: 7
+    Recargas: 6
+    Monto total: $19352.00
+
+  Semana 6 (2025-05-06):
+    Visitas: 2
+    Recargas: 2
+    Monto total: $6936.00
+
+  Semana 7 (2025-05-12):
+    Visitas: 11
+    Recargas: 10
+    Monto total: $28331.00
+
+  Semana 8 (2025-05-13):
+    Visitas: 4
+    Recargas: 7
+    Monto total: $23109.00
+
+  Semana 9 (2025-05-19):
+    Visitas: 7
+    Recargas: 11
+    Monto total: $32911.00
+
+  Semana 10 (2025-05-20):
+    Visitas: 0
+    Recargas: 3
+    Monto total: $4252.00
+
+  Semana 11 (2025-05-26):
+    Visitas: 2
+    Recargas: 4
+    Monto total: $11040.00
+
+  Semana 12 (2025-05-27):
+    Visitas: 1
+    Recargas: 0
+    Monto total: $0.00
+
+
+CLIENTE ID: client_1
+--------------------------------------------------
+Total de eventos: 97
+Total de visitas: 47
+Total de recargas: 50
+Monto total recargado: $139211.00
+Promedio semanal de recargas: $11600.92
+
+DETALLE POR SEMANAS:
+  Semana 1 (2025-04-21):
+    Visitas: 1
+    Recargas: 1
+    Monto total: $1295.00
+
+  Semana 2 (2025-04-22):
+    Visitas: 1
+    Recargas: 0
+    Monto total: $0.00
+
+  Semana 3 (2025-04-28):
+    Visitas: 11
+    Recargas: 11
+    Monto total: $30440.00
+
+  Semana 4 (2025-04-29):
+    Visitas: 1
+    Recargas: 1
+    Monto total: $2332.00
+
+  Semana 5 (2025-05-05):
+    Visitas: 4
+    Recargas: 12
+    Monto total: $31129.00
+
+  Semana 6 (2025-05-06):
+    Visitas: 2
+    Recargas: 0
+    Monto total: $0.00
+
+  Semana 7 (2025-05-12):
+    Visitas: 10
+    Recargas: 8
+    Monto total: $20999.00
+
+  Semana 8 (2025-05-13):
+    Visitas: 1
+    Recargas: 3
+    Monto total: $8446.00
+
+  Semana 9 (2025-05-19):
+    Visitas: 10
+    Recargas: 10
+    Monto total: $33266.00
+
+  Semana 10 (2025-05-20):
+    Visitas: 2
+    Recargas: 2
+    Monto total: $5881.00
+
+  Semana 11 (2025-05-26):
+    Visitas: 3
+    Recargas: 2
+    Monto total: $5423.00
+
+  Semana 12 (2025-05-27):
+    Visitas: 1
+    Recargas: 0
+    Monto total: $0.00
+
+
+CLIENTE ID: client_2
+--------------------------------------------------
+Total de eventos: 99
+Total de visitas: 55
+Total de recargas: 44
+Monto total recargado: $119864.00
+Promedio semanal de recargas: $10896.73
+
+DETALLE POR SEMANAS:
+  Semana 1 (2025-04-21):
+    Visitas: 1
+    Recargas: 1
+    Monto total: $2540.00
+
+  Semana 2 (2025-04-22):
+    Visitas: 1
+    Recargas: 0
+    Monto total: $0.00
+
+  Semana 3 (2025-04-28):
+    Visitas: 8
+    Recargas: 8
+    Monto total: $23735.00
+
+  Semana 4 (2025-04-29):
+    Visitas: 2
+    Recargas: 3
+    Monto total: $9063.00
+
+  Semana 5 (2025-05-05):
+    Visitas: 15
+    Recargas: 5
+    Monto total: $17622.00
+
+  Semana 6 (2025-05-06):
+    Visitas: 2
+    Recargas: 3
+    Monto total: $6776.00
+
+  Semana 7 (2025-05-12):
+    Visitas: 13
+    Recargas: 9
+    Monto total: $18370.00
+
+  Semana 8 (2025-05-13):
+    Visitas: 0
+    Recargas: 2
+    Monto total: $4664.00
+
+  Semana 9 (2025-05-19):
+    Visitas: 12
+    Recargas: 11
+    Monto total: $34014.00
+
+  Semana 10 (2025-05-20):
+    Visitas: 1
+    Recargas: 1
+    Monto total: $1315.00
+
+  Semana 11 (2025-05-26):
+    Visitas: 0
+    Recargas: 1
+    Monto total: $1765.00
+
+
+CLIENTE ID: client_3
+--------------------------------------------------
+Total de eventos: 95
+Total de visitas: 46
+Total de recargas: 49
+Monto total recargado: $125499.00
+Promedio semanal de recargas: $13944.33
+
+DETALLE POR SEMANAS:
+  Semana 1 (2025-04-21):
+    Visitas: 1
+    Recargas: 1
+    Monto total: $1216.00
+
+  Semana 2 (2025-04-28):
+    Visitas: 5
+    Recargas: 7
+    Monto total: $20478.00
+
+  Semana 3 (2025-04-29):
+    Visitas: 2
+    Recargas: 2
+    Monto total: $6088.00
+
+  Semana 4 (2025-05-05):
+    Visitas: 8
+    Recargas: 9
+    Monto total: $22230.00
+
+  Semana 5 (2025-05-06):
+    Visitas: 2
+    Recargas: 1
+    Monto total: $764.00
+
+  Semana 6 (2025-05-12):
+    Visitas: 14
+    Recargas: 16
+    Monto total: $38346.00
+
+  Semana 7 (2025-05-13):
+    Visitas: 4
+    Recargas: 0
+    Monto total: $0.00
+
+  Semana 8 (2025-05-19):
+    Visitas: 9
+    Recargas: 11
+    Monto total: $32276.00
+
+  Semana 9 (2025-05-20):
+    Visitas: 1
+    Recargas: 2
+    Monto total: $4101.00
+
+
+CLIENTE ID: client_4
+--------------------------------------------------
+Total de eventos: 104
+Total de visitas: 64
+Total de recargas: 40
+Monto total recargado: $105852.00
+Promedio semanal de recargas: $8821.00
+
+DETALLE POR SEMANAS:
+  Semana 1 (2025-04-21):
+    Visitas: 2
+    Recargas: 1
+    Monto total: $653.00
+
+  Semana 2 (2025-04-22):
+    Visitas: 1
+    Recargas: 0
+    Monto total: $0.00
+
+  Semana 3 (2025-04-28):
+    Visitas: 11
+    Recargas: 11
+    Monto total: $31663.00
+
+  Semana 4 (2025-04-29):
+    Visitas: 3
+    Recargas: 0
+    Monto total: $0.00
+
+  Semana 5 (2025-05-05):
+    Visitas: 15
+    Recargas: 4
+    Monto total: $9527.00
+
+  Semana 6 (2025-05-06):
+    Visitas: 2
+    Recargas: 2
+    Monto total: $7213.00
+
+  Semana 7 (2025-05-12):
+    Visitas: 11
+    Recargas: 7
+    Monto total: $20718.00
+
+  Semana 8 (2025-05-13):
+    Visitas: 3
+    Recargas: 0
+    Monto total: $0.00
+
+  Semana 9 (2025-05-19):
+    Visitas: 13
+    Recargas: 9
+    Monto total: $24219.00
+
+  Semana 10 (2025-05-20):
+    Visitas: 2
+    Recargas: 2
+    Monto total: $2881.00
+
+  Semana 11 (2025-05-26):
+    Visitas: 1
+    Recargas: 3
+    Monto total: $5419.00
+
+  Semana 12 (2025-05-27):
+    Visitas: 0
+    Recargas: 1
+    Monto total: $3559.00
+
+
+CLIENTE ID: client_5
+--------------------------------------------------
+Total de eventos: 104
+Total de visitas: 57
+Total de recargas: 47
+Monto total recargado: $122832.00
+Promedio semanal de recargas: $11166.55
+
+DETALLE POR SEMANAS:
+  Semana 1 (2025-04-21):
+    Visitas: 1
+    Recargas: 2
+    Monto total: $2914.00
+
+  Semana 2 (2025-04-22):
+    Visitas: 0
+    Recargas: 2
+    Monto total: $4563.00
+
+  Semana 3 (2025-04-28):
+    Visitas: 9
+    Recargas: 8
+    Monto total: $18257.00
+
+  Semana 4 (2025-04-29):
+    Visitas: 4
+    Recargas: 1
+    Monto total: $1399.00
+
+  Semana 5 (2025-05-05):
+    Visitas: 11
+    Recargas: 11
+    Monto total: $34038.00
+
+  Semana 6 (2025-05-06):
+    Visitas: 6
+    Recargas: 1
+    Monto total: $1805.00
+
+  Semana 7 (2025-05-12):
+    Visitas: 9
+    Recargas: 14
+    Monto total: $35584.00
+
+  Semana 8 (2025-05-13):
+    Visitas: 3
+    Recargas: 0
+    Monto total: $0.00
+
+  Semana 9 (2025-05-19):
+    Visitas: 7
+    Recargas: 7
+    Monto total: $20137.00
+
+  Semana 10 (2025-05-20):
+    Visitas: 3
+    Recargas: 1
+    Monto total: $4135.00
+
+  Semana 11 (2025-05-26):
+    Visitas: 4
+    Recargas: 0
+    Monto total: $0.00
+
+
+CLIENTE ID: client_6
+--------------------------------------------------
+Total de eventos: 93
+Total de visitas: 47
+Total de recargas: 46
+Monto total recargado: $134176.00
+Promedio semanal de recargas: $13417.60
+
+DETALLE POR SEMANAS:
+  Semana 1 (2025-04-21):
+    Visitas: 0
+    Recargas: 1
+    Monto total: $4457.00
+
+  Semana 2 (2025-04-28):
+    Visitas: 9
+    Recargas: 11
+    Monto total: $32901.00
+
+  Semana 3 (2025-04-29):
+    Visitas: 2
+    Recargas: 2
+    Monto total: $7047.00
+
+  Semana 4 (2025-05-05):
+    Visitas: 7
+    Recargas: 6
+    Monto total: $16414.00
+
+  Semana 5 (2025-05-06):
+    Visitas: 1
+    Recargas: 0
+    Monto total: $0.00
+
+  Semana 6 (2025-05-12):
+    Visitas: 8
+    Recargas: 12
+    Monto total: $31742.00
+
+  Semana 7 (2025-05-13):
+    Visitas: 3
+    Recargas: 4
+    Monto total: $15546.00
+
+  Semana 8 (2025-05-19):
+    Visitas: 15
+    Recargas: 8
+    Monto total: $21222.00
+
+  Semana 9 (2025-05-20):
+    Visitas: 0
+    Recargas: 1
+    Monto total: $3602.00
+
+  Semana 10 (2025-05-26):
+    Visitas: 2
+    Recargas: 1
+    Monto total: $1245.00
+
+
+CLIENTE ID: client_7
+--------------------------------------------------
+Total de eventos: 98
+Total de visitas: 53
+Total de recargas: 45
+Monto total recargado: $123759.00
+Promedio semanal de recargas: $11250.82
+
+DETALLE POR SEMANAS:
+  Semana 1 (2025-04-21):
+    Visitas: 0
+    Recargas: 3
+    Monto total: $13998.00
+
+  Semana 2 (2025-04-22):
+    Visitas: 1
+    Recargas: 1
+    Monto total: $745.00
+
+  Semana 3 (2025-04-28):
+    Visitas: 7
+    Recargas: 11
+    Monto total: $32245.00
+
+  Semana 4 (2025-04-29):
+    Visitas: 1
+    Recargas: 4
+    Monto total: $12231.00
+
+  Semana 5 (2025-05-05):
+    Visitas: 9
+    Recargas: 8
+    Monto total: $22871.00
+
+  Semana 6 (2025-05-06):
+    Visitas: 2
+    Recargas: 0
+    Monto total: $0.00
+
+  Semana 7 (2025-05-12):
+    Visitas: 19
+    Recargas: 5
+    Monto total: $9138.00
+
+  Semana 8 (2025-05-13):
+    Visitas: 1
+    Recargas: 3
+    Monto total: $8653.00
+
+  Semana 9 (2025-05-19):
+    Visitas: 9
+    Recargas: 6
+    Monto total: $16125.00
+
+  Semana 10 (2025-05-20):
+    Visitas: 4
+    Recargas: 2
+    Monto total: $5586.00
+
+  Semana 11 (2025-05-26):
+    Visitas: 0
+    Recargas: 2
+    Monto total: $2167.00
+
+
+CLIENTE ID: client_8
+--------------------------------------------------
+Total de eventos: 96
+Total de visitas: 49
+Total de recargas: 47
+Monto total recargado: $122997.00
+Promedio semanal de recargas: $12299.70
+
+DETALLE POR SEMANAS:
+  Semana 1 (2025-04-21):
+    Visitas: 5
+    Recargas: 3
+    Monto total: $6604.00
+
+  Semana 2 (2025-04-28):
+    Visitas: 10
+    Recargas: 12
+    Monto total: $32758.00
+
+  Semana 3 (2025-04-29):
+    Visitas: 2
+    Recargas: 1
+    Monto total: $1540.00
+
+  Semana 4 (2025-05-05):
+    Visitas: 13
+    Recargas: 7
+    Monto total: $15543.00
+
+  Semana 5 (2025-05-06):
+    Visitas: 0
+    Recargas: 4
+    Monto total: $16106.00
+
+  Semana 6 (2025-05-12):
+    Visitas: 6
+    Recargas: 5
+    Monto total: $10357.00
+
+  Semana 7 (2025-05-13):
+    Visitas: 3
+    Recargas: 1
+    Monto total: $3040.00
+
+  Semana 8 (2025-05-19):
+    Visitas: 6
+    Recargas: 8
+    Monto total: $17645.00
+
+  Semana 9 (2025-05-20):
+    Visitas: 1
+    Recargas: 2
+    Monto total: $6925.00
+
+  Semana 10 (2025-05-26):
+    Visitas: 3
+    Recargas: 4
+    Monto total: $12479.00
+
+
+CLIENTE ID: client_9
+--------------------------------------------------
+Total de eventos: 109
+Total de visitas: 47
+Total de recargas: 62
+Monto total recargado: $169806.00
+Promedio semanal de recargas: $16980.60
+
+DETALLE POR SEMANAS:
+  Semana 1 (2025-04-21):
+    Visitas: 1
+    Recargas: 1
+    Monto total: $4705.00
+
+  Semana 2 (2025-04-22):
+    Visitas: 0
+    Recargas: 2
+    Monto total: $6151.00
+
+  Semana 3 (2025-04-28):
+    Visitas: 12
+    Recargas: 9
+    Monto total: $21755.00
+
+  Semana 4 (2025-04-29):
+    Visitas: 1
+    Recargas: 5
+    Monto total: $16985.00
+
+  Semana 5 (2025-05-05):
+    Visitas: 10
+    Recargas: 8
+    Monto total: $28598.00
+
+  Semana 6 (2025-05-06):
+    Visitas: 1
+    Recargas: 3
+    Monto total: $5748.00
+
+  Semana 7 (2025-05-12):
+    Visitas: 9
+    Recargas: 16
+    Monto total: $41512.00
+
+  Semana 8 (2025-05-13):
+    Visitas: 1
+    Recargas: 3
+    Monto total: $7184.00
+
+  Semana 9 (2025-05-19):
+    Visitas: 11
+    Recargas: 13
+    Monto total: $29484.00
+
+  Semana 10 (2025-05-26):
+    Visitas: 1
+    Recargas: 2
+    Monto total: $7684.00
+
+
+
+CONSIDERACIONES PARA DEVOLUCIÓN DE DATOS:
+--------------------------------------------------
+1. ESTRUCTURA DE RESPUESTA API:
+   - Incluir semanas sin recargas con promedio 0
+   - Ordenar cronológicamente
+   - Incluir metadatos de paginación si es necesario
+
+2. OPTIMIZACIONES:
+   - Usar agregaciones de base de datos en lugar de procesamiento en memoria
+   - Implementar filtros por fecha para reducir el dataset
+   - Considerar caché para consultas frecuentes
+

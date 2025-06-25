@@ -1,0 +1,36 @@
+================================================================================
+REPORTE 1: CLIENTES ELEGIBLES PARA BENEFICIO AUTOMÁTICO
+================================================================================
+
+CRITERIO: Clientes que visitan 5 veces seguidas una misma tienda sin haber recargado su tarjeta entre medio
+
+TOTAL DE CLIENTES ELEGIBLES: 1
+
+DETALLE DE CLIENTES:
+--------------------------------------------------------------------------------
+1. Cliente ID: client_0
+   Tienda ID: store1
+   Visitas consecutivas: 5
+   Primera visita: 5/1/2025, 9:47:21 PM
+   Última visita: 5/4/2025, 9:47:21 AM
+   Detalle de visitas:
+     1. 5/1/2025, 9:47:21 PM - Tienda: store1
+     2. 5/3/2025, 4:47:21 PM - Tienda: store1
+     3. 5/4/2025, 6:47:21 AM - Tienda: store1
+     4. 5/4/2025, 9:47:21 AM - Tienda: store1
+     5. 5/4/2025, 9:47:21 AM - Tienda: store1
+
+
+IMPLEMENTACIÓN SUGERIDA:
+--------------------------------------------------
+1. Crear una tabla "beneficios" para almacenar los beneficios otorgados
+2. Implementar un job/cron que ejecute esta lógica periódicamente
+3. Considerar validaciones adicionales:
+   - Que el cliente no haya recibido el beneficio recientemente
+   - Que la tienda esté activa y participando del programa
+   - Límites de beneficios por periodo
+4. Para manejar grandes volúmenes de datos:
+   - Usar caché (Redis) para almacenar contadores de visitas consecutivas
+   - Procesar en lotes (batches) para evitar timeouts
+   - Implementar índices en la base de datos para queries eficientes
+
