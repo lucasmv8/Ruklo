@@ -14,7 +14,6 @@ Prueba técnica para Ruklo - Sistema completo de análisis de comportamiento de 
 - [Base de Datos](#-base-de-datos)
 - [Reportes Generados](#-reportes-generados)
 - [Scripts Disponibles](#-scripts-disponibles)
-- [Troubleshooting](#-troubleshooting)
 
 ## 🎯 Descripción General
 
@@ -38,8 +37,6 @@ Este documento contiene las respuestas detalladas a todas las preguntas de la pr
 - **Parte 2**: Limitaciones de la solución actual y escalabilidad
 - **Consideraciones técnicas**: Optimizaciones, índices y mejoras de rendimiento
 - **Arquitectura propuesta**: Diseño para manejo de grandes volúmenes de datos
-
-> 💡 **Nota**: El PDF incluye respuestas técnicas específicas sobre limitaciones de rendimiento, manejo de 100,000 eventos diarios, y estrategias de optimización para cada componente del sistema.
 
 ## 🛠️ Requisitos Previos
 
@@ -221,27 +218,56 @@ Ruklo/
 #### Entidades Principales:
 ```prisma
 model User {
-  id      String  @id
-  events  Event[]
+  id         String      @id
+  events     Event[]
+  beneficios Beneficio[]
+  @@map("Usuario")
 }
 
 model Store {
-  id      String  @id  
-  events  Event[]
+  id         String      @id  
+  events     Event[]
+  beneficios Beneficio[]
 }
 
 model Event {
-  id         Int       @id @default(autoincrement())
-  type       EventType
-  timestamp  DateTime
-  amount     Float?    
-  usuarioId  String
-  storeId    String
+  id               Int               @id @default(autoincrement())
+  type             EventType
+  timestamp        DateTime
+  amount           Float?    
+  usuarioId        String
+  storeId          String
+  beneficioEventos BeneficioEvento[]
+}
+
+model Beneficio {
+  id                  Int               @id @default(autoincrement())
+  usuarioId           String
+  storeId             String
+  visitasConsecutivas Int
+  fechaCreacion       DateTime          @default(now())
+  fechaOtorgado       DateTime?
+  estado              EstadoBeneficio   @default(PENDIENTE)
+  eventos             BeneficioEvento[]
+}
+
+model BeneficioEvento {
+  id          Int       @id @default(autoincrement())
+  beneficioId Int
+  eventoId    Int
+  orden       Int       // Orden de la visita (1-5)
 }
 
 enum EventType {
   visit
   recharge
+}
+
+enum EstadoBeneficio {
+  PENDIENTE
+  OTORGADO
+  USADO
+  EXPIRADO
 }
 ```
 
@@ -249,10 +275,18 @@ enum EventType {
 - **`visit`**: Visita a una tienda (sin monto)
 - **`recharge`**: Recarga de tarjeta (con monto)
 
+### Estados de Beneficios:
+- **`PENDIENTE`**: Beneficio detectado pero no otorgado
+- **`OTORGADO`**: Beneficio otorgado al cliente
+- **`USADO`**: Beneficio utilizado por el cliente
+- **`EXPIRADO`**: Beneficio que perdió vigencia
+
 ### Relaciones:
-- Un Usuario puede tener múltiples Eventos
-- Una Tienda puede tener múltiples Eventos
+- Un Usuario puede tener múltiples Eventos y Beneficios
+- Una Tienda puede tener múltiples Eventos y Beneficios
 - Cada Evento pertenece a un Usuario y una Tienda
+- Cada Beneficio está relacionado con 5 Eventos específicos a través de BeneficioEvento
+- BeneficioEvento mantiene el orden de las visitas que generaron el beneficio
 
 ## 📊 Reportes Generados
 
@@ -313,56 +347,3 @@ npm run db:reset       # Resetear base de datos
 npm run convert-json   # Convertir JSON a TypeScript
 npm test              # Ejecutar pruebas
 ```
-
-## 🐛 Troubleshooting
-
-### Problemas Comunes:
-
-#### 1. Error de Conexión a Base de Datos
-```bash
-# Verificar que Docker esté ejecutándose
-docker-compose ps
-
-# Reiniciar contenedor de PostgreSQL
-docker-compose restart postgres
-```
-
-#### 2. Error "Cannot find module '@prisma/client'"
-```bash
-# Regenerar cliente Prisma
-npm run db:generate
-```
-
-#### 3. Error "relation does not exist"
-```bash
-# Aplicar esquema a la base de datos
-npm run db:push
-```
-
-#### 4. Base de Datos Vacía
-```bash
-# Ejecutar seed para poblar datos
-npm run seed
-```
-
-### Logs y Debugging:
-- Los errores se muestran en consola con emojis descriptivos
-- Verificar conexión de red para Docker
-- Revisar variables de entorno en `.env`
-
-## 🔧 Personalización
-
-### Configuración Avanzada:
-El sistema permite personalizar parámetros en `ReporteConfig`:
-- `maxUsuariosMuestra`: Número máximo de usuarios en reportes
-- `visitasConsecutivasMinimas`: Criterio para beneficios
-- `outputDir`: Directorio de salida de reportes
-
-### Extensión del Sistema:
-- Agregar nuevos analizadores en `src/analyzers/`
-- Crear nuevos tipos de reportes en `src/services/`
-- Extender el modelo de datos en `prisma/schema.prisma`
-
----
-
-**¡Disfruta usando el Sistema de Análisis Ruklo! 🚀**
